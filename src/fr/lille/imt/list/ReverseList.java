@@ -34,14 +34,7 @@ public class ReverseList {
     }
 
     public static void main(String[] args) {
-        ListNode l1 = new ListNode(1);
-        ListNode l2 = new ListNode(2);
-        ListNode l3 = new ListNode(3);
-        ListNode l4 = new ListNode(4);
-        l1.next = l2;
-        l2.next = l3;
-        l3.next = l4;
-        l4.next = null;
+        ListNode l1 = new CreateList().create();
         ListNode reversed = solution2(l1);
         while(reversed!=null){
             System.out.println(reversed.val);
