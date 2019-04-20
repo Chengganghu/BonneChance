@@ -1,4 +1,4 @@
-package fr.lille.imt.thread;
+package fr.lille.imt.thread.syn;
 
 public class ThreadTest {
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class ThreadTest {
                 e.printStackTrace();
             }
         }
-//        new Thread(new fr.lille.imt.thread.Consumer(messageStorage)).start();
-//        new Thread(new fr.lille.imt.thread.Producer(messageStorage,88)).start();
+//        new Thread(new fr.lille.imt.thread.syn.Consumer(messageStorage)).start();
+//        new Thread(new fr.lille.imt.thread.syn.Producer(messageStorage,88)).start();
     }
 }

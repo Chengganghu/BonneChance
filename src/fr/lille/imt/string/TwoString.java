@@ -47,8 +47,28 @@ public class TwoString {
 
     }
 
+    public static String solution2(String str1,String str2){
+        int index1 = str1.length() -1;
+        int index2 = str2.length() -1;
+        int carry = 0;
+        int num;
+        StringBuilder sb = new StringBuilder();
+        while(index1>=0||index2>=0){
+            int num1 = index1<0?0:str1.charAt(index1)-'0';
+            int num2 = index2<0?0:str2.charAt(index2)-'0';
+            sb.append((num1+num2+carry)%10);
+            carry = (num1+num2+carry)/10;
+            index1--;
+            index2--;
+        }
+        if(carry == 1)
+            sb.append(1);
+        return sb.reverse().toString();
+
+    }
+
     public static void main(String[] args) {
-        String res = solution(s1,s2);
+        String res = solution2("99009990","99887767");
         System.out.println(res);
     }
 }

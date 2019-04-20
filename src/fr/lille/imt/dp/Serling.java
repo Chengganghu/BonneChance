@@ -28,8 +28,34 @@ public class Serling {
         return dp[n];
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+    public static int reviser(int[] arr, int n){
+        int[] dp = new int[n+1];
+        Arrays.fill(dp,0);
+        int max = 0;
+        for(int i=0;i<=n;i++){
+            for(int j=1;j<arr.length;j++){
+                if(i-j>=0){
+                    dp[i] = dp[i-j]+arr[j]>dp[i]?dp[i-j]+arr[j-1]:dp[i];
+                }
+            }
+        }
+        return dp[n];
+    }
     public static void main(String[] args) {
         System.out.println("solution1 : "+solution1(P,4));
         System.out.println("solution2 : "+solution2(P,4));
+        System.out.println("solution2 : "+reviser(P,4));
     }
 }

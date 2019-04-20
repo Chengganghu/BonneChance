@@ -1,4 +1,4 @@
-package fr.lille.imt.thread;
+package fr.lille.imt.thread.syn;
 
 public class Producer implements Runnable {
     private MessageStorage messageStorage;

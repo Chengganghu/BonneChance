@@ -1,4 +1,4 @@
-package fr.lille.imt.thread;
+package fr.lille.imt.thread.syn;
 
 import java.util.*;
 public class Main{

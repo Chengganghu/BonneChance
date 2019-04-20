@@ -9,7 +9,7 @@ public class CreateList {
         l1.next = l2;
         l2.next = l3;
         l3.next = l4;
-        l4.next = null;
+        l4.next = l2;
         return l1;
     }
 }
