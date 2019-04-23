@@ -7,12 +7,15 @@ public class BWMatrix {
     private static int m;
     private static int[][]arr;
 
-    public static void input(){
+    public static void input() {
         Scanner sc = new Scanner(System.in);
         String first = sc.nextLine();
         String [] tmp = first.split(" ");
         n = Integer.parseInt(tmp[0]);
         m = Integer.parseInt(tmp[1]);
+        if(m == 0||n == 0){
+            throw new RuntimeException("cant be 0");
+        }
         arr = new int[n][m];
         for(int i=0;i<n;i++){
             String line = sc.nextLine();
