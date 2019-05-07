@@ -17,6 +17,20 @@ public class BackTrack {
         put("8","tuv");
         put("9","wxyz");
     }};
+
+    public static void backTrackReviser(String res, String left){
+        if(left.length() == 0){
+            output.add(res);
+        }else{
+            String next = left.substring(0,1);
+            char[]letters = phone.get(next).toCharArray();
+            for(char c:letters){
+                backTrack(res+c,left.substring(1));
+            }
+        }
+    }
+
+
     public static void backTrack(String res, String next){
         if(next.length() == 0)
             output.add(res);
@@ -35,4 +49,17 @@ public class BackTrack {
         backTrack("",digits);
         return output;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

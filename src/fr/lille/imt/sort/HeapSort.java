@@ -9,12 +9,7 @@ public class HeapSort {
         }
     }
 
-    /**
-     *
-     * @param array
-     * @param m      最大元素下标
-     * @param s      需要调整的节点序号
-     */
+
     public static void adjustHeap(int[] array, int m,int s){
         int maxIndex = m;
         int i = s, j;
@@ -46,7 +41,7 @@ public class HeapSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {3,4,7,8,9,13,5,1};
+        int[] arr = {0,1,0,4,8,2};
         heapSort(arr);
     }
 }
