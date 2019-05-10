@@ -26,7 +26,7 @@ public class Combination {
     }
 
     public static void main(String[] args) {
-        int[] arr = {2,3,4};
+        int[] arr = {5,2,3,4};
         combinationSum(arr,8);
     }
 }
