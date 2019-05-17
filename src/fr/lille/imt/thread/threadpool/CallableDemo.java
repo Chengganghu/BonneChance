@@ -7,7 +7,7 @@ public class CallableDemo implements Callable<Integer> {
     @Override
     public Integer call() throws Exception {
         System.out.println(Thread.currentThread().getName()+" begins");
-        Thread.sleep(5000);
+        Thread.sleep(1000);
         for(int i=0;i<5000;i++){
             sum = sum + i;
         }
