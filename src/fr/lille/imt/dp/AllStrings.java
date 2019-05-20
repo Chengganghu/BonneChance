@@ -7,7 +7,7 @@ public class AllStrings {
     public static List<String> output = new ArrayList<>();
 
     public static void main(String[] args) {
-        String s = "abcd";
+        String s = "jesuichenggang";
         char[] array = s.toCharArray();
         solution(array,0,array.length-1);
     }
